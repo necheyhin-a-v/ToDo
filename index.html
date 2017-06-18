@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+    <!--Using hosted jquery library from Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<section class="content">
+    <header>
+        <h1>ToDo</h1>
+        <input type="text" onkeydown="addNewItem(event, this.value)" placeholder="Что нужно сделать?" autofocus/>
+        <ol id="taskList">
+
+        </ol>
+    </header>
+    <section>
+        <!--Here go items-->
+    </section>
+</section>
+<footer class="footer">
+    <p>Код доступен на <a href="https://github.com/necheyhin-a-v/ToDo" title="GitHub is one of the largest code hosts in the world">GitHub</a></p>
+    <p>В качестве основы взято с <a href="http://todomvc.com/examples/vanilla-es6/">TodoMVC</a></p>
+</footer>
+</body>
+</html>

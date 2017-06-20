@@ -12,13 +12,15 @@
 <section class="content">
     <header>
         <h1>ToDo</h1>
-        <input type="text" onkeydown="addNewItem(event, this.value)" placeholder="Что нужно сделать?" autofocus/>
-        <ol id="taskList">
-
-        </ol>
+        <input type="text" onkeydown="addNewItem(event, this)" placeholder="Что нужно сделать?" autofocus/>
     </header>
     <section>
+        <!--Toggle button-->
+        <!--<div class="toggle"></div>-->
         <!--Here go items-->
+        <ul id="listItem">
+            <li class="checked" onclick="markAsChecked(this)">Read a book</li>
+        </ul>
     </section>
 </section>
 <footer class="footer">

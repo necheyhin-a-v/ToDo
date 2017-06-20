@@ -1,9 +1,74 @@
 body{
     background: #f5f5f5;
+    min-width: 350px;
+    max-width: 500px;
+    margin: auto;               /* center align */
 }
-.content, .footer{
-    width: 200px;
-    padding: 10px; /* fields around */
-    margin: auto; /* center align */
+
+.content{
+    width: 100%;
+    padding: 10px;              /* fields around */
     background: none;
+    box-sizing: border-box;     /*use for fitting content inside parent with paddings*/
+}
+
+input{
+    font-size: 24px;
+    width: 100%;
+    box-sizing: border-box;     /*use for fitting content inside parent with paddings*/
+    padding: 16px;
+    padding-left: 50px;
+    border: none;
+}
+
+input::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #e6e6e6;
+}
+
+input::-moz-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #e6e6e6;
+}
+
+input:-ms-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #e6e6e6;
+}
+
+input:focus{
+    outline: none; /*remove input selection*/
+}
+
+h1{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;          /*remove markers*/
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    color: #4d4d4d;
+    font-size: 24px;
+    padding:16px;
+    padding-left: 50px;
+    border-top: 1px solid #e6e6e6;
+    background-color: white;
+}
+
+ul li.checked {
+    color: #e6e6e6;
+    text-decoration: line-through;
+}
+
+.footer{
+    width: 100%;
+    padding: 10px;              /* fields around */
+    background: none;
+    box-sizing: border-box;     /*use for fitting content inside parent with paddings*/
 }

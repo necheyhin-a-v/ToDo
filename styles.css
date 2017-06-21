@@ -68,6 +68,23 @@ ul li.checked {
     text-decoration: line-through;
 }
 
+.status {
+    outline: 0;
+    border: 1px solid #92bc92;
+    position: absolute;
+    left: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    font-style: italic;
+    color: #92bc92;
+}
+.status:hover {
+
+}
+
 .close {
     font-size: 30px;
     color: #ffd7d7;
@@ -81,9 +98,11 @@ ul li.checked {
     border: none;
     background-color: transparent;
 }
+
 .close:hover {
     color: red;
 }
+
 .close:active {
     border: none;
     outline: 0;     /*remove border in chrome*/

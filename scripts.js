@@ -37,6 +37,9 @@ function addItemToList(element) {
     closeButton.onclick = function() {
         removeItemFromList(closeButton);
     };
+    //status button
+    var statusButton = document.createElement("button");
+    statusButton.className = "status";
     //li element
     var newItem = document.createElement("li");
     newItem.onclick = function () {
@@ -48,6 +51,7 @@ function addItemToList(element) {
     newItem.onmouseout = function () {
         mouseOut(newItem);
     };
+    newItem.appendChild(statusButton);
     newItem.appendChild(span);
     newItem.appendChild(closeButton);
     //put created item to the right position
@@ -63,13 +67,23 @@ function removeItemFromList(element) {
 
 function markAsChecked(element) {
     if (element.classList) {
-        if(element.classList.contains("checked"))
+        if(element.classList.contains("checked")) {
             element.classList.remove("checked");
-        else
+            setMarker(element, "");
+        }
+
+        else {
             element.classList.add("checked");
+            setMarker(element, "v");
+        }
     } else {
         //old browser
     }
+}
+
+function setMarker(element, text) {
+    var button = element.firstElementChild;
+    button.innerHTML = text;
 }
 
 function mouseOver(element) {

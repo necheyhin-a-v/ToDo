@@ -52,6 +52,7 @@ ul{
     margin: 0;
     padding: 0;
 }
+
 ul li{
     color: #4d4d4d;
     font-size: 24px;
@@ -59,11 +60,38 @@ ul li{
     padding-left: 50px;
     border-top: 1px solid #e6e6e6;
     background-color: white;
+    position: relative;             /*needed for children absolute position*/
 }
 
 ul li.checked {
     color: #e6e6e6;
     text-decoration: line-through;
+}
+
+.close {
+    font-size: 30px;
+    color: #ffd7d7;
+    font-weight: 500;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+.close:hover {
+    color: red;
+}
+.close:active {
+    border: none;
+    outline: 0;     /*remove border in chrome*/
+
+}
+
+.hidden {
+    display: none;
 }
 
 .footer{

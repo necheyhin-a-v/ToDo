@@ -12,6 +12,11 @@ body{
     box-sizing: border-box;     /*use for fitting content inside parent with paddings*/
 }
 
+#items {
+    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);*/
+}
+
 input{
     font-size: 24px;
     width: 100%;
@@ -19,6 +24,8 @@ input{
     padding: 16px;
     padding-left: 50px;
     border: none;
+    /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);*/
 }
 
 input::-webkit-input-placeholder {
@@ -51,6 +58,14 @@ ul{
     list-style-type: none;          /*remove markers*/
     margin: 0;
     padding: 0;
+
+}
+.statistics {
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
+                0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
+                0 17px 2px -6px rgba(0, 0, 0, 0.2);                         /*layer emulation with shadow */
 }
 
 ul li{
@@ -61,6 +76,7 @@ ul li{
     border-top: 1px solid #e6e6e6;
     background-color: white;
     position: relative;             /*needed for children absolute position*/
+
 }
 
 ul li.checked {

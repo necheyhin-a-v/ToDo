@@ -14,7 +14,7 @@
         <h1>ToDo</h1>
         <input type="text" onkeydown="addNewItem(event, this)" placeholder="Что нужно сделать?" autofocus/>
     </header>
-    <section>
+    <section id="items">
         <!--Toggle button-->
         <!--<div class="toggle"></div>-->
         <!--Here go items-->
@@ -26,6 +26,12 @@
             </li>
         </ul>
     </section>
+    <footer class="statistics">
+        Осталось сделать: <span id="countLeft">0</span>
+        <button onclick="showAll()">Все</button>
+        <button onclick="showActive()">Активные</button>
+        <button onclick="showFinished()">Завершенные</button>
+    </footer>
 </section>
 <footer class="footer">
     <p>Код доступен на <a href="https://github.com/necheyhin-a-v/ToDo" title="GitHub is one of the largest code hosts in the world">GitHub</a></p>
